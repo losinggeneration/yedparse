@@ -1,14 +1,13 @@
 package yed_test
 
 import (
-  "github.com/orfjackal/gospec/src/gospec"
-  "testing"
+	"testing"
+
+	"github.com/orfjackal/gospec/src/gospec"
 )
 
-
 func TestAllSpecs(t *testing.T) {
-  r := gospec.NewRunner()
-  r.AddSpec(YedSpec)
-  gospec.MainGoTest(r, t)
+	r := gospec.NewRunner()
+	r.AddSpec(YedSpec)
+	gospec.MainGoTest(r, t)
 }
-
